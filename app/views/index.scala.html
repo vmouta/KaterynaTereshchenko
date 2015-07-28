@@ -1,0 +1,94 @@
+@(title: String)
+
+@tags = {
+	<meta name="keywords" content="Piano Consultant, iOS, Android, Java, web"/>
+   	<meta name="description" content="Kateryna Tereshchenko home page">
+}
+
+@scripts = {
+	<script type="text/javascript" src="@routes.Assets.versioned("js/backstretch.js")"></script>
+	<script type="text/javascript">
+      //Home Page BG Slideshow
+      //-----------------------------------
+      $.backstretch([
+            "@routes.Assets.versioned("images/01.jpg")"
+          , "@routes.Assets.versioned("images/02.jpg")"
+          , "@routes.Assets.versioned("images/03.jpg")"
+        ], {duration: 3000, fade: 750});
+    </script>
+}
+
+@main(title, "home")(Html(""), scripts)(tags) {
+
+    <!-- Fullscreen Page 
+    ================================================== -->
+    <div id="fullscreen" class="home"> <!-- Full Screen Home Page -->
+      <div id="overlay" class="bg"></div> <!-- Color Overlay -->
+        
+        <div id="home" class="container"> <!-- Start Container -->
+          <div class="row"> <!-- Start Row -->
+
+            <div id="left" class="col-sm-12 col-md-12"> <!--- Left Content -->
+            
+              <div id="menu" class="fa fa-bars fa-2x" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body"></div>
+              <div id="page-detail" class="text-center">
+
+                <div id="homeslider" class="carousel slide" data-ride="carousel">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="carousel-caption">
+                        <h4>@Messages("index.quoter3")</h4>
+                        <hr>
+                        <h1>@Messages("index.quote3")</h1>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-caption">
+                        <h4>@Messages("index.quoter1")</h4>
+                        <hr>
+                        <h1>@Messages("index.quote1")</h1>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-caption">
+                        <h4>@Messages("index.quoter2")</h4>
+                        <hr>
+                        <h1>@Messages("index.quote2")</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space"></div>
+                <ul class="tags">
+                  @if(lang().code().equals("en")==false) {<li><a href="@routes.Application.updateLang("en")">@Messages("navigation.language.english")</a></li>}
+                  @if(lang().code().equals("pt")==false) {<li><a href="@routes.Application.updateLang("pt")">@Messages("navigation.languag.portuguese")</a></li>}
+                  @if(lang().code().equals("de")==false) {<li><a href="@routes.Application.updateLang("de")">@Messages("navigation.language.german")</a></li>}
+                  @if(lang().code().equals("ru")==false) {<li><a href="@routes.Application.updateLang("ru")">@Messages("navigation.language.russian")</a></li>}
+                </ul>
+                @_share()
+              </div>
+            </div> <!--- End Left Content -->
+          
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
+
+
+      <!-- Navigation Bar -->
+      <nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+          <div class="pull-left text-left">
+            <span class="logo">@Messages("navigation.logo")</span>
+            <p class="copyright">@Messages("navigation.copyright")</p>
+          </div>
+          <div class="pull-right text-right controls">
+            <a href="#homeslider" role="button" data-slide="prev"><span class="fa fa-arrow-left"></span></a>
+            <a href="#homeslider" role="button" data-slide="next"><span class="fa fa-arrow-right"></span></a>
+          </div>
+        </div>
+      </nav>
+	 
+    </div> <!--- End Fullscreen Page -->
+}

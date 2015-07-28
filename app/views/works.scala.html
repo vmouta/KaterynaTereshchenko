@@ -1,0 +1,336 @@
+@(title: String)
+
+@tags = {
+	<meta name="keywords" content="Piano Consultant, iOS, Android, Java, web"/>
+   	<meta name="description" content="Kateryna Tereshchenko home page">
+}
+
+@main(title, "work")()(tags) {
+
+    <!-- Fullscreen Page 
+    ================================================== -->
+    <div id="fullscreen" class="works"> <!--- Full Screen Blog Post Page -->
+      <div id="sidebar" class="blog">
+        <div class="featured-img"><img src="@routes.Assets.versioned("images/work/1.jpg")" alt='...'></div> <!-- featured image-->
+      </div>
+
+      <div class="container"> <!-- Start Container -->
+        <div class="row"> <!-- Start Row -->
+
+          <div id="left" class="col-sm-6 col-md-6"> <!--- Left Content -->
+              <div id="menu" class="fa fa-bars fa-2x" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body"></div>
+              <div id="page-detail"> <!--- Page Details -->
+                
+                <h4>@Messages("work.portfolio")</h4>
+                <h1>@Messages("work.title")</h1>
+                @_tags()
+
+                @_share()
+              </div> <!--- End Page Details -->
+          </div> <!--- End Left Content -->
+
+          <div id="right" class="col-sm-6 col-md-6"> <!--- Right Content -->
+            <div id="content"><!--- Start Content Wrapper-->
+              <div class="text"> <!--- Text Wrapper -->
+
+                <!-- Start Portfolio -->
+                <div id="works" class="portfolio">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                      <a href="#modal1" class="portfolio-link" data-toggle="modal">
+                        <img src='@routes.Assets.versioned("images/work/20150511/1.jpg")' alt='' class="img-responsive"/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <a href="#modal2" class="portfolio-link" data-toggle="modal">
+                        <img src='@routes.Assets.versioned("images/work/20150701/1.jpg")' alt='' class="img-responsive"/>
+                      </a>
+                    </div> 
+                    <div class="col-lg-6 col-md-6">
+                      <a href="#modal3" class="portfolio-link" data-toggle="modal">
+                        <img src='@routes.Assets.versioned("images/work/20100709/1.jpg")' alt='' class="img-responsive"/>
+                      </a>
+                    </div> 
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                      <a href="#modal4" class="portfolio-link" data-toggle="modal">
+                        <img src='@routes.Assets.versioned("images/work/1.jpg")' alt='' class="img-responsive"/>
+                      </a>
+                    </div> 
+                    <div class="col-lg-4 col-md-4">
+                      <a href="#modal5" class="portfolio-link" data-toggle="modal">
+                        <img src='@routes.Assets.versioned("images/work/1.jpg")' alt='' class="img-responsive"/>
+                      </a>
+                    </div> 
+                  </div>
+                </div><!-- End Portfolio -->
+
+              <div class="space"></div>
+              <div class="clearfix"></div>
+              </div> <!--- End Text Wrapper -->
+            </div><!--- End Content Wrapper -->
+          </div>  <!--- End Right Content -->
+
+        </div> <!--- End Row -->
+      </div> <!-- End Container -->
+
+      <!-- Modal Content
+      ================================================== -->
+      <!-- Modal Popup Album #1 -->
+      <div class="modalfullscreen modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true"> <!--- Full Screen Blog Post Page -->
+
+        <div class="viewer container"> <!-- Start Container -->
+          <div class="row"> <!-- Start Row -->
+            <h2>Best Things In The World Gallery</h2>
+            <h6>Gallery</h6>
+            <br>
+
+            <div class="col-md-8 col-md-offset-2">
+              <div class="img-slider">
+                <div class="close" data-dismiss="modal"><img src="@routes.Assets.versioned("images/close.png")" alt='...'></div>
+
+                <div id="viewer-slider" class="vslider carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="img/blog/01.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                      <img src="img/blog/02.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                      <img src="img/blog/03.jpg" alt="...">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="share-btn">
+                  <img src="@routes.Assets.versioned("images/share.png")" alt='...'>
+                </div>
+                 <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                  </ul>
+              </div>
+              <span class="view-prev pull-left" ><a href="#viewer-slider" role="button" data-slide="prev">View Previous</a></span>
+              <span class="view-next pull-right"><a href="#viewer-slider" role="button" data-slide="next">View Next</a></span>
+              <br>
+              <br>
+              <p>Etiam sed adipiscing leo. Integer eu sem ullamcorper, iaculis lacus ut.</p>
+            </div>
+                        
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
+
+      </div> <!-- End Modal Popup Album #1 -->
+
+
+      <!-- Modal Popup Album #2 -->
+      <div class="modalfullscreen modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true"> <!--- Full Screen Blog Post Page -->
+
+        <div class="viewer container"> <!-- Start Container -->
+          <div class="row"> <!-- Start Row -->
+            <h2>I love Lamborghini</h2>
+            <h6>Gallery</h6>
+            <br>
+
+            <div class="col-md-8 col-md-offset-2">
+              <div class="img-slider">
+                <div class="close" data-dismiss="modal"><img src="@routes.Assets.versioned("images/close.png")" alt='...'> </div>
+
+                <div id="viewer-slider2" class="vslider carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="img/blog/03.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                      <img src="img/blog/02.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                      <img src="img/blog/03.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                      <img src="img/blog/02.jpg" alt="...">
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="share-btn">
+                  <img src="@routes.Assets.versioned("images/share.png")" alt='...'>
+                </div>
+                 <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                  </ul>
+              </div>
+              <span class="view-prev pull-left" ><a href="#viewer-slider2" role="button" data-slide="prev">View Previous</a></span>
+              <span class="view-next pull-right"><a href="#viewer-slider2" role="button" data-slide="next">View Next</a></span>
+              <br>
+              <br>
+              <p>Etiam sed adipiscing leo. Integer eu sem ullamcorper, iaculis lacus ut.</p>
+            </div>
+                        
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
+
+      </div> <!-- End Modal Popup Album #2 -->
+
+
+      <!-- Modal Popup Album #3 -->
+      <div class="modalfullscreen modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true"> <!--- Full Screen Blog Post Page -->
+
+        <div class="viewer container"> <!-- Start Container -->
+          <div class="row"> <!-- Start Row -->
+            <h2>Classic Machines</h2>
+            <h6>Gallery</h6>
+            <br>
+
+            <div class="col-md-8 col-md-offset-2">
+              <div class="img-slider">
+                <div class="close" data-dismiss="modal"><img src="@routes.Assets.versioned("images/close.png")" alt='...'></div>
+
+                <div id="viewer-slider3" class="vslider carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="img/blog/02.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                      <img src="img/blog/03.jpg" alt="...">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="share-btn">
+                  <img src="@routes.Assets.versioned("images/share.png")" alt='...'>
+                </div>
+                 <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                  </ul>
+              </div>
+              <span class="view-prev pull-left" ><a href="#viewer-slider3" role="button" data-slide="prev">View Previous</a></span>
+              <span class="view-next pull-right"><a href="#viewer-slider3" role="button" data-slide="next">View Next</a></span>
+              <br>
+              <br>
+              <p>Etiam sed adipiscing leo. Integer eu sem ullamcorper, iaculis lacus ut.</p>
+            </div>
+                        
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
+
+      </div> <!-- End Modal Popup Album #3 -->
+
+https://www.youtube.com/watch?v=iV1WfSGJFzs
+
+
+      <!-- Modal Popup Video #4 -->
+      <div class="modalfullscreen modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true"> <!--- Full Screen Blog Post Page -->
+
+        <div class="viewer container"> <!-- Start Container -->
+          <div class="row"> <!-- Start Row -->
+            <h2>All About Photography</h2>
+            <h6>Video - Vimeo</h6>
+            <br>
+
+            <div class="col-md-8 col-md-offset-2">
+              <div class="img-slider svideo">
+                <div class="close" data-dismiss="modal"><img src="@routes.Assets.versioned("images/close.png")" alt='...'></div>
+
+                <iframe src="//www.youtube.com/embed/iV1WfSGJFzs" allowfullscreen></iframe><!-- Replace this with your Vimeo Video Link -->
+                <div class="share-btn">
+                  <img src="@routes.Assets.versioned("images/share.png")" alt='...'>
+                </div>
+                 <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                  </ul>
+              </div>
+              <br>
+              <br>
+              <p>Etiam sed adipiscing leo. Integer eu sem ullamcorper, iaculis lacus ut.</p>
+            </div>
+                        
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
+
+      </div> <!-- End Modal Popup Album #4 -->
+
+
+      <!-- Modal Popup Video #5 -->
+      <div class="modalfullscreen modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true"> <!--- Full Screen Blog Post Page -->
+
+        <div class="viewer container"> <!-- Start Container -->
+          <div class="row"> <!-- Start Row -->
+            <h2>Learn About Photography</h2>
+            <h6>Video - Youtube</h6>
+            <br>
+
+            <div class="col-md-8 col-md-offset-2">
+              <div class="img-slider svideo">
+                <div class="close" data-dismiss="modal"><img src="@routes.Assets.versioned("images/close.png")" alt='...'></div>
+
+                <iframe src="//www.youtube.com/embed/EPUpURbLCXk" allowfullscreen></iframe><!-- Replace this with your Youtube Video Link -->
+
+                <div class="share-btn">
+                  <img src="@routes.Assets.versioned("images/share.png")" alt='...'>
+                </div>
+                 <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                  </ul>
+              </div>
+              <br>
+              <br>
+              <p>Etiam sed adipiscing leo. Integer eu sem ullamcorper, iaculis lacus ut.</p>
+            </div>
+                        
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
+      </div> <!-- End Modal Popup Album #5 -->
+
+
+      <!-- Navigation Bar -->
+      <nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+          <div class="pull-left text-left">
+            <span class="logo">@Messages("navigation.logo")</span>
+            <p class="copyright">@Messages("navigation.copyright")</p>
+          </div>
+          <div class="pull-right text-right">
+            <h6>View More</h6>
+            <nav id="more-page">
+              <ul class="pagination">
+                <li><a class="active" href="#">&laquo;</a></li>
+                <li><a href="works.html">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </nav>
+}

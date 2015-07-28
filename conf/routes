@@ -1,0 +1,21 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           		controllers.Application.index()
+GET     /$lang<[a-z]{2}>					controllers.Application.indexI18n(lang: String)
+GET     /$lang<[a-z]{2}>/					controllers.Application.indexI18n(lang: String)
+GET     /$lang<[a-z]{2}>/home.html			controllers.Application.home(lang: String)
+GET     /$lang<[a-z]{2}-[^/]+>/home.html	controllers.Application.home(lang: String)
+
+GET     /$lang<[a-z]{2}>/contact.html       controllers.Application.contact(lang: String)
+GET     /$lang<[a-z]{2}>/works.html         controllers.Application.works(lang: String)
+GET     /$lang<[a-z]{2}>/about.html         controllers.Application.about(lang: String)
+GET     /$lang<[a-z]{2}>/blog.html          controllers.Application.blog(lang: String)
+
+GET		/updatelanguage				controllers.Application.updateLang(lang: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/js/routes.js    	controllers.Application.jsRoutes
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

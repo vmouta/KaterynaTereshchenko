@@ -1,0 +1,129 @@
+# --- Portuguese --- #
+
+index.home=Home
+index.about=About
+index.life=Life
+index.what=What I do
+index.hire=Hire Me
+
+index.mywork=My Work
+index.myresume=My resume
+
+index.aboutme=About me
+index.philosophy=My philosophy
+index.text.aboutme=My name is Vasco Mouta. From the medieval Spanish name Velasco which possibly meant "crow" in Basque. I’m a computer scientist / entrepreneur / mobile developer / backend developer / passion about electronic originaly from Portugal. I had the opportunity to enlarge my knowledge in different markets such as Switzerland, Finland, Cape Verde and Portugal. Living in different countries, learning and getting adapted to new cultures teach me how to quickly absorb the difference and socialize the local way of living trying to get the best on every different scenario. In the past years I had the chance to embrace the challenge in resources of a small company, the need for diversity in a start-up, the adaptation of merging into a big company, the complexity of an acquisition and the more complex reporting structure that a several management layers of a big company requires, those brought me a wide range of skills and experience I believe not easy to find.
+index.text.philosophy=As a rowing competition athlete with 13 national championships titles, national team athlete, helped me to understand results matter and not just hard work, to be competitive for so many years requires a constant search for innovation, and new way to optimize and achieve more efficient results. It also, enhanced the work in a team, focused on common goals no matter the differences on the individual responsibilities. This is the mentality I bring into my professional life that helped me obtain great results in my Engineer career as in my brief management experiences. Together with my pleasure to discover and explore new technologies leads me to a fascinate environment with no limits. I believe in social responsibility, that a man’s service to others must be at least in ratio to the character of his own success in life. When one is fortunate enough to gain a measure of material well being, however small, service to others should be uppermost in his mind. Freedom and social responsibility form the basis of my own personal philosophy. Upon them, I believe, depends the very dignity of man.
+index.look=A Look into my life
+index.look.text1=I have a dog golden retriever named Benjamain, I try to play guitar and love sports. Cooking and preparing food myself give me pleasure, fish and seafood are the ones that make me happy.
+index.look.text2=On the bar I'll stay around a Mokey 47 or Hendricks tonic and a two stones single malt with dark chocolate.
+index.look.text3=I love a piano concerto as I like ballet you may find me watching opera the same way you may find me watching a garage band.
+
+index.whatido=What I do?
+index.whatido.message1=I am bringing 10 years of a solid experience working in the tech scene with both start-ups and big companies in web and mobile worlds.
+index.whatido.message2=I helped to build companies and brands, took ideas and turned them into revenue-generating web products, lead and managed teams of engineers and designers, jumped on failing projects and lead the teams to success.
+index.whatido.message3=Built product roadmaps and executed on them while staying agile and opened to innovation and emerging trends in tech world.
+
+index.filters=Filters
+index.viewall=View All 
+index.athome=At Home
+index.onwater=On The Water
+index.onroad=On The Road
+index.onbar=On The Bar
+
+contact=Contato
+contact.header=Diga "Ola!", sempre bom receber uma mensagem agradavel!
+
+contact.info=Location
+contact.info=Info
+contact.toutch=Get in touch
+
+contact.details=Details
+contact.map=Open the map
+
+download.resume=Download Resume
+download.vcard=Download Vcard
+
+message.name=Name
+message.email=E-mail
+message.message=Message
+message.send=Send Message
+
+hireme.title=Ready to order your project ?
+hireme.subtitle=Do you have an idea? A boring product? Need help?.
+
+navigation.hi=Hi! I''M
+navigation.home=Home
+navigation.about=About Me
+navigation.portfolio=Portfolio
+navigation.work=work
+navigation.resume=Resume
+navigation.blog=Blog
+navigation.contact=Contact
+navigation.language=Language
+navigation.language.english=English
+navigation.languag.portuguese=Portugues
+navigation.language.german=Deutch
+navigation.language.russian=Russian
+
+portfolio.works=Works
+portfolio.services=Services
+portfolio.title=My Portfolio
+portfolio.subtitle=Collection of most products I was involved and services
+portfolio.view=Let's View
+portfolio.filters=Filters
+portfolio.viewall=View All
+
+quotes.title=Favorite Quotes
+quotes.message1=“It doesn't make sence to hire smart people and then tell them what to do; we hire smart people so they can tell us what to do.”
+quotes.author1=Steve Jobs
+quotes.message2=“It’s not about ideas. It’s about making ideas happen.”
+quotes.author2=Scott Belsky
+quotes.message3=“Progress is not about were you are, but about where you come from.”
+quotes.author3=Vasco Mouta
+quotes.message4=“Dream big. Start small. But most of all, start.”
+quotes.author4=Simon Sinek
+quotes.message5=“Some people want it to happen, some wish it would happen, others make it happen.“
+quotes.author5=Michael Jordan
+
+resume.works=Works
+resume.resume=Resume
+resume.skills=Skills
+
+resume.title=My Resume
+resume.subtitle=Find work history, education background, personal skills and areas of interest
+resume.hireme=Hire Me
+resume.somework=Some of my works
+resume.latestworks=My latest works.
+resume.allworks=View all works
+
+subscribe.title=Subscribe
+subscribe.subtitle=Interested to know about new projects I'm working on, or currious about events I intend to attend? Subscribe to my news letter (spam free).
+subscribe.email=E-mail
+subscribe.subscribe=Subscribe
+
+widgets.toutch=Get in Touch
+widgets.findme=Find Me
+
+blog.title=My Blog
+blog.subtitle=Latest news and curriosities
+blog.continue=Continue Reading...
+blog.post.view=Let's View
+blog.comment=Comments
+blog.comment.short=com.
+blog.post.view=Let's View
+blog.post.share=Share this post:
+
+share.page=Share This Page
+
+portfolio.images=Project Images 
+portfolio.details=Details
+portfolio.company=Company
+portfolio.category=Category
+portfolio.date=Date
+portfolio.history=HISTORY
+portfolio.result=RESULT
+portfolio.experience=EXPERIENCE
+
+date.format="dd.MMM.yyyy"
+date.format.full=dd MMMM yyyy
+datetime.format="dd.MMM.yyyy HH:mm"

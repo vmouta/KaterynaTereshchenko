@@ -1,0 +1,78 @@
+@(title: String)
+
+@tags = {
+	<meta name="keywords" content="Piano Consultant, iOS, Android, Java, web"/>
+   	<meta name="description" content="Kateryna Tereshchenko home page">
+}
+
+@main(title, "about")(tags)() {
+
+    <!-- Fullscreen Page 
+    ================================================== -->
+    <div id="fullscreen" class="about-me"> <!--- Full Screen About Me Page -->
+      <div id="sidebar" class="blog">
+        <div class="featured-img"><img src="@routes.Assets.versioned("images/about/1.jpg")" alt="..."></div> <!-- featured image-->
+      </div>
+
+      <div class="container"> <!-- Start Container -->
+        <div class="row"> <!-- Start Row -->
+
+          <div id="left" class="col-sm-6 col-md-6"> <!--- Left Content -->
+            
+              <div id="menu" class="fa fa-bars fa-2x" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body"></div>
+              <div id="page-detail"> <!--- Page Details -->
+                
+                <h4>@Messages("about.about")</h4>
+                <h1>@Messages("about.me")</h1>
+                @_tags()
+
+                @_share()
+              </div> <!--- End age Details -->
+          </div> <!--- End Left Content -->
+
+          <div id="right" class="col-sm-6 col-md-6"> <!--- Right Content -->
+            <div id="content"><!--- Start Content Wrapper-->
+              <div class="text"> <!--- Start Text Wrapper -->
+                <p>@Messages("about.first")</p>
+                <img src="@routes.Assets.versioned("images/about/2.jpg")" alt="..." class="img-responsive">
+                <blockquote>@Messages("about.quote")</blockquote>
+                <hr>
+                <h4>@Messages("about.education")</h4>
+                <p>@Messages("about.education1")</p>
+                <p>@Messages("about.education2")</p>
+                <hr>
+                <h4>@Messages("about.competitions")</h4>
+                <p><strong><em>@Messages("about.competition1")</em></strong> </p>
+                <p><strong><em>@Messages("about.competition2")</em></strong> </p>
+                <p><strong><em>@Messages("about.competition3")</em></strong> </p>
+                <p><strong><em>@Messages("about.competition4")</em></strong> </p>
+                <p><strong><em>@Messages("about.competition5")</em></strong> </p>
+                <hr>
+                <h4>@Messages("about.more")</h4>
+                <p>@Messages("about.current")</p>
+                
+              <div class="space"></div>
+              <div class="clearfix"></div>
+              </div> <!--- End Text Wrapper -->
+            
+            </div><!--- End Content Wrapper--> 
+          
+          </div> <!--- End Right Content -->
+
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+
+      <!-- Navigation Bar -->
+      <nav id="footer-nav" class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+          <div class="pull-left text-left">
+            <span class="logo">@Messages("navigation.logo")</span>
+            <p class="copyright">@Messages("navigation.copyright")</p>
+          </div>
+          <div class="pull-right text-right">
+            <h6>@Messages("navigation.help")</h6>
+            <a href="contact.html"><span class="contact-link">@Messages("navigation.contact")</span></a>
+          </div>
+        </div>
+      </nav> <!-- End Navigation Bar -->
+}

@@ -1,0 +1,215 @@
+@(title: String)
+
+@tags = {
+	<meta name="keywords" content="Piano Consultant, iOS, Android, Java, web"/>
+   	<meta name="description" content="Kateryna Tereshchenko home page">
+}
+
+@main(title, "blog")()(tags) {
+
+    <!-- Fullscreen Page 
+    ================================================== -->
+    <div id="fullscreen" class="blog"> <!--- Full Screen Blog Page -->
+      <!-- Top Navigation Bar -->
+      <nav id="top-nav" class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="pull-left text-left">
+            <span id="menu" class="fa fa-bars fa-2x" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body"></span>
+          </div>
+          <div class="pull-right text-right">
+            <nav id="more-page">
+              <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a class="active" href="blog.html">1</a></li>
+                <li><a href="blog2.html">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>                  
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+            </nav>
+          </div>            
+        </div>
+      </nav> <!-- End Top Navigation Bar -->
+
+        <div id ="blog"> <!-- Start Blog Content -->   
+          <div class="container"> <!-- Start Container -->         
+            <div id="content"><!--- Start Content Wrapper-->
+              <div class="text"> <!--  Text -->
+
+                <!-- Start Blog Posts --> 
+                <div id="posts" class="portfolio">
+
+                  <div class="row">
+
+                    <div class="col-lg-4 col-md-4 item">
+                      <div class="details">
+                        <a href="blog/best-things-in-the-world.html">
+                          <h4>The Best Things In The Word</h4>
+                        </a>
+                        <span class="meta-author">@Messages("blog.postby")<a href="http://www.tagesanzeiger.ch/">Tages Anzeiger</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="http://www.tagesanzeiger.ch/kultur/pop-und-jazz/Der-Unendlichkeit-entgegen/story/15826070"><img src="@routes.Assets.versioned("images/blog/20150511/1.jpg")" alt='' class="img-responsive"/></a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 item">
+                      <div class="details">
+                        <a href="blog/why-i-love-writing.html">
+                          <h4>Why I Love Writing</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Jenn Pereira</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/why-i-love-writing.html"><img src='img/blog/03.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 item">
+                      <div class="details">
+                        <a href="blog/classic-machines.html">
+                          <h4>Classic Machines</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Alexa Cassandra</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/classic-machines.html"><img src='img/blog/03.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-lg-6 col-md-6 item">
+                      <div class="details">
+                        <a href="blog/sexy-and-free.html">
+                          <h4>I'm Sexy and Free</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">JLP Media</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/sexy-and-free.html"><img src='img/blog/03.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 item">
+                      <div class="details">
+                        <a href="blog/me-and-my-stuffs.html">
+                          <h4>Me and My Stuffs</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Jenn Pereira</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/me-and-my-stuffs.html"><img src='img/blog/03.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                  </div>
+                  <div class="row">
+
+                    <div class="col-lg-3 col-md-3 item">
+                      <div class="details">
+                        <a href="blog/standing-tall.html">
+                          <h4>Standing Tall</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Errol Luke</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/standing-tall.html"><img src='img/blog/01.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 item">
+                      <div class="details">
+                        <a href="blog/love-food.html">
+                          <h4>I Love Food Like I Love My Job</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Jenn Pereira</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/love-food.html"><img src='img/blog/03.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 item">
+                      <div class="details">
+                        <a href="blog/my-baby.html">
+                          <h4>You Will Always Be My Baby</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Lian Gwapa</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/my-baby.html"><img src='img/blog/03.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                    
+                    <div class="col-lg-6 col-md-6 item">
+                      <div class="details">
+                        <a href="blog/wanna-travel.html">
+                          <h4>All I Wanna Do Is Travel</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Jenn Pereira</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/wanna-travel.html"><img src='img/blog/03.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 item">
+                      <div class="details">
+                        <a href="blog/my-pets.html">
+                          <h4>My Pets are my Bestfriends</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">AC Pereira</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/my-pets.html"><img src='img/blog/01.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 item">
+                      <div class="details">
+                        <a href="blog/me-my-life-my-job.html">
+                          <h4>Me, My Life, My Job</h4>
+                        </a>
+                        <span class="meta-author">Posted by: <a href="#">Jenn Pereira</a></span>
+                        <br>
+                        <br>
+                      </div>
+                      <a href="blog/me-my-life-my-job.html"><img src='img/blog/01.jpg' alt='' class="img-responsive"/></a>
+                    </div>
+
+                  </div> 
+                
+
+              <div class="space"></div>
+              <div class="clearfix"></div>
+              </div> <!-- End Blog Posts --> 
+            
+            </div><!--  End Text Wrapper -->
+          </div> <!--- End Content Wrapper-->
+
+        </div> <!-- End Row -->
+      </div> <!-- End Container -->
+
+
+      <!-- Navigation Bar -->
+      <nav id="footer-nav" class="home navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div class="container">
+          <div class="pull-left text-left">
+            <span class="logo">@Messages("navigation.logo")</span>
+          </div>
+          <div class="pull-right text-right">
+            <p class="copyright">@Messages("navigation.copyright")</p>
+          </div>
+        </div>
+      </nav>
+
+    </div> <!--- End Full Screen Blog Post Page -->
+}

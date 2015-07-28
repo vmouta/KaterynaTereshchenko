@@ -1,0 +1,20 @@
+@(tab : String)
+
+<!-- Off Canvas Navigation
+================================================== -->
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas"> <!--- Off Canvas Side Menu -->
+  <img src="@routes.Assets.versioned("images/user.jpg")" alt="..." class="img-circle user-img"> <!--- User Icon/Image -->
+  <a class="navmenu-brand" href="about.html">@Messages("navigation.hi")</a> <!--- User Name -->
+  <ul class="nav navmenu-nav"> <!--- Menu -->
+    <li class="@if(tab.equals("home")) {active}"><a href="/@{lang().code()}/home.html">@Messages("navigation.home")</a></li>
+    <li class="@if(tab.equals("about")) {active}"><a href="/@{lang().code()}/about.html">@Messages("navigation.about")</a></li>
+    <li class="@if(tab.equals("work")) {active}"><a href="/@{lang().code()}/works.html">@Messages("navigation.work")</a></li>
+    <li class="@if(tab.equals("blog")) {active}"><a href="/@{lang().code()}/blog.html">@Messages("navigation.blog")</a></li>
+    <li class="@if(tab.equals("contact")) {active}"><a href="/@{lang().code()}/contact.html">@Messages("navigation.contact")</a></li>
+  </ul><!--- End Menu -->
+
+  <ul class="social-media"> <!--- User Social Media -->
+    <li><a href="http://www.facebook.com/katerynatereshchenkopiano">Facebook</a></li>
+    <li><a href="http://www.pinterest.com/junekate/">Pinterest</a></li>
+  </ul> <!--- End User Social Media -->
+</div> <!--- End Off Canvas Side Menu -->

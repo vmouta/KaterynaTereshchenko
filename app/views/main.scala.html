@@ -1,0 +1,40 @@
+@(title: String, page: String)(parentCss: Html = Html(""), parentScripts: Html = Html(""))(metaData: Html = Html(""))(content: Html)
+
+@meta = {
+
+	@if(metaData.body.length() == 0) {
+		<!--  The Open Graph protocol -->
+		<meta property="og:title" content="ateryna Tereshchenko"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://www.katerynatereshchenko.com/"/>
+		<meta property="og:image" content="@routes.Assets.versioned("images/contact/1.jpg").absoluteURL()"/>
+		<meta property="og:site_name" content="Kateryna Tereshchenko Home Page"/>
+		<meta property="og:description" content="Kateryna Tereshchenko website."/>
+		<meta property="fb:admins" content="katerynatereshchenkopiano"/>
+	} else {
+		@metaData
+	}
+}
+
+@css = {
+	@parentCss
+}
+
+@scripts = {
+	@parentScripts
+}
+
+@base(title, css, scripts, meta) {
+
+	<!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    
+	<!--================= Site navigation  ================-->
+    @main_navigation(page)
+    <!-- Site navigation end -->
+    
+	@content
+}

@@ -1,0 +1,68 @@
+# --- English --- #
+
+about.about=About
+about.me=Kateryna \nTereshchenko
+about.first=Kateryna Tereshchenko was born in Ukraine in 1988. Since her earliest childhood she has been surrounded by musicians. Her first piano lesson was at the age of 4, and she performed at her public debut at the age of 5.
+about.quote=She is not perfect nor a perfectionist, but she is a believer of perfection in every work she does.
+about.education=Education
+about.education1=In 2006, she graduated from the Lysenko Special Musical School in Kiev, where she studied under Prof. Boris Fedorov. From 2007 till 2014 she was a student of Zürcher Hochschule der Künste (ZHdK).
+about.education2= She acquired a Konzertdiplom and two Masters of Specialized Music Performance: one Solistendiplom under Prof. Konstantin Scherbakov, and one in Kammermusik under Prof. Ulrich Koella.
+about.competitions=Competitions
+about.competition1=- International competition "Art of 21 century" Kiev- Vorzel/ 2004. 1st prize
+about.competition2=- International Competition for Young Pianists in Memory of V.Horowitz. Kiev/ 2001. Award of special prize
+about.competition3=- Festival of F.Chopin. Dnipropetrovsk/ Ukraine/ 2000. Grand Prix
+about.competition4=- International Piano competition in memory of P.Lutsenko. Kharkov/Ukraine / 2d prize
+about.competition5=- 2011 & 2012 (Switzerland / Zürich ) she won a prize at the Scholarschip competition of "Migros Kulturprozent"
+about.more=More About Kateryna...
+about.current=Currently Kateryna is part of Zurich Operan Hause academy...
+
+index.quoter1=Heinrich Heine 
+index.quote1=“Where words leave off, \nmusic begins.”
+index.quoter2=F.Nietzsche
+index.quote2=“...without music life \nwould be a mistake”
+index.quoter3=Welcome to Kateryna Tereshchenko
+index.quote3=Music From heart \nAnd the 88 Keys
+
+contact.hireme=I’m Available\nfor Hire
+contact.title=I am Here, Willing To Discuss \nWith You About Anything.
+contact.message=The first step in approaching is to submit your plan. You will be contacted in order to discuss your plan in more depth.
+
+message.name=Your Name *
+message.email=Your E-mail *
+message.message=Your Message *
+message.send=SEND IT NOW
+
+work.portfolio=Portfolio
+work.title=Works & \nConcerts
+
+blog.postby=Posted by: 
+
+navigation.hi=Hi! I''M Kateryna
+navigation.home=Home
+navigation.about=About Me
+navigation.portfolio=Portfolio
+navigation.work=work
+navigation.resume=Resume
+navigation.blog=Blog
+navigation.contact=Contact
+
+navigation.logo=Kateryna Tereshchenko
+navigation.copyright=Copyright@2015
+navigation.learn=Learn More?
+navigation.help=Need Help?
+
+navigation.concert=Concert Pianist
+navigation.chamber=Chamber Music
+navigation.accompaniment=Accompaniment
+
+navigation.language=Language
+navigation.language.english=English
+navigation.languag.portuguese=Portugues
+navigation.language.german=Deutch
+navigation.language.russian=Russian
+
+share.page=Share This
+
+date.format="dd.MMM.yyyy"
+date.format.full=dd MMMM yyyy
+datetime.format="dd.MMM.yyyy HH:mm"
